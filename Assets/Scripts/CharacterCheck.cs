@@ -1,25 +1,24 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using TMPro;
 
 public class CharacterCheck : MonoBehaviour
 {
+    public TMP_Text ConfirmationTest;
     void OnTriggerStay(Collider other) {
         if (other.gameObject.tag == "kana_i") {
-           print("correct");
-        } else if (other.gameObject.tag == "kana_a") {
-            print("wrong");
+            ConfirmationTest.text = "correct";
+        } else {
+            ConfirmationTest.text = "wrong";
         }
     }
-    // Start is called before the first frame update
     void Start()
     {
-        
+        ConfirmationTest = GetComponent<TextMeshProUGUI>();
     }
 
-    // Update is called once per frame
     void Update()
     {
-        
     }
 }

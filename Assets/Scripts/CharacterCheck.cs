@@ -5,7 +5,7 @@ using TMPro;
 
 public class CharacterCheck : MonoBehaviour
 {
-    public TMP_Text ConfirmationTest;
+    public TextMesh ConfirmationTest;
 
     void OnTriggerStay(Collider other) {
         if (other.gameObject.tag == "kana_i") {
@@ -14,9 +14,10 @@ public class CharacterCheck : MonoBehaviour
             ConfirmationTest.text = "wrong";
         }
     }
+    
     void Start()
     {
-        ConfirmationTest = GetComponent<TextMeshPro>();
+        ConfirmationTest = GetComponent<TextMesh>();
     }
 
     void Update()

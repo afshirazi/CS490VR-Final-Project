@@ -8,12 +8,16 @@ public class GameLoop : MonoBehaviour
     public CharacterCheck PPScript;
     public AudioClip[] KanaSounds;
     public AudioSource CurrSound;
+    private IEnumerator Coroutine;
 
     // Start is called before the first frame update
     void Start()
     {
         CurrSound = GetComponent<AudioSource>();
         PPScript = MyPressurePlate.GetComponent<CharacterCheck>();
+
+        Coroutine = SetAndPlaySound();
+        StartCoroutine(Coroutine);
     }
 
     IEnumerator SetAndPlaySound() {

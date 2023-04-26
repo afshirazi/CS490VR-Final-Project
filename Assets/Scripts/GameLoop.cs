@@ -6,6 +6,7 @@ public class GameLoop : MonoBehaviour
 {
     public GameObject MyPressurePlate;
     public CharacterCheck PPScript;
+    public AnimationStateController asc;
     public AudioClip[] KanaSounds;
     public AudioSource CurrSound;
     private IEnumerator Coroutine;
@@ -22,11 +23,13 @@ public class GameLoop : MonoBehaviour
 
     IEnumerator SetAndPlaySound() {
         while (true){
-            yield return new WaitForSeconds(3);
+            asc.SetCustomerState(0); // idle
+            yield return new WaitForSeconds(5);
             int kana = (int)Random.Range(0, 4);
             PPScript.SetKanaTag("kana_a");
             CurrSound.clip = KanaSounds[kana];
             CurrSound.Play();
+            asc.SetCustomerState(1); // call out sound
         }
         
     }

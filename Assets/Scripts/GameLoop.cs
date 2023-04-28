@@ -6,6 +6,8 @@ public class GameLoop : MonoBehaviour
 {
     public GameObject MyPressurePlate;
     public CharacterCheck PPScript;
+    public GameObject MyFoodChoices;
+    public FoodChoices FCScript;
     public AnimationStateController asc;
     public AudioClip[] KanaSounds;
     public AudioSource CurrSound;
@@ -16,6 +18,7 @@ public class GameLoop : MonoBehaviour
     {
         CurrSound = GetComponent<AudioSource>();
         PPScript = MyPressurePlate.GetComponent<CharacterCheck>();
+        FCScript = MyFoodChoices.GetComponent<FoodChoices>();
 
         Coroutine = SetAndPlaySound();
         StartCoroutine(Coroutine);
@@ -26,7 +29,8 @@ public class GameLoop : MonoBehaviour
             yield return new WaitForSeconds(3);
             asc.SetCustomerState(0); // idle
             yield return new WaitForSeconds(2);
-            int kana = (int)Random.Range(0, 4);
+            int kana = Random.Range(0, 5);
+            FCScript.SetChosenLabel(kana);
             PPScript.SetKanaTag("kana_a");
             CurrSound.clip = KanaSounds[kana];
             CurrSound.Play();

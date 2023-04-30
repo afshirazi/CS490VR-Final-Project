@@ -253,7 +253,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2130398903583827995, guid: 3f167d12854f242cc9af518cdaae4754, type: 3}
       propertyPath: m_Name
-      value: Kana_1
+      value: Kana_2
       objectReference: {fileID: 0}
     - target: {fileID: 2130398903583827995, guid: 3f167d12854f242cc9af518cdaae4754, type: 3}
       propertyPath: m_TagString
@@ -1973,7 +1973,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2130398903583827995, guid: 3f167d12854f242cc9af518cdaae4754, type: 3}
       propertyPath: m_Name
-      value: Kana_4
+      value: Kana_1
       objectReference: {fileID: 0}
     - target: {fileID: 2130398903583827998, guid: 3f167d12854f242cc9af518cdaae4754, type: 3}
       propertyPath: m_Enabled
@@ -6222,7 +6222,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2130398903583827995, guid: 3f167d12854f242cc9af518cdaae4754, type: 3}
       propertyPath: m_Name
-      value: Kana_3
+      value: Kana_4
       objectReference: {fileID: 0}
     - target: {fileID: 2130398903583827998, guid: 3f167d12854f242cc9af518cdaae4754, type: 3}
       propertyPath: m_Enabled
@@ -9173,11 +9173,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 911446400003031103, guid: 101df1b06f88f44be8448d2876edcd74, type: 3}
       propertyPath: m_Name
-      value: FoodItem_4
+      value: FoodItem_1
       objectReference: {fileID: 0}
     - target: {fileID: 2933623041409837994, guid: 101df1b06f88f44be8448d2876edcd74, type: 3}
       propertyPath: m_RootOrder
-      value: 3
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2933623041409837994, guid: 101df1b06f88f44be8448d2876edcd74, type: 3}
       propertyPath: m_LocalPosition.x
@@ -9392,7 +9392,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 911446400003031103, guid: 101df1b06f88f44be8448d2876edcd74, type: 3}
       propertyPath: m_Name
-      value: FoodItem_2
+      value: FoodItem_3
       objectReference: {fileID: 0}
     - target: {fileID: 911446400003031103, guid: 101df1b06f88f44be8448d2876edcd74, type: 3}
       propertyPath: m_TagString
@@ -9400,7 +9400,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2933623041409837994, guid: 101df1b06f88f44be8448d2876edcd74, type: 3}
       propertyPath: m_RootOrder
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 2933623041409837994, guid: 101df1b06f88f44be8448d2876edcd74, type: 3}
       propertyPath: m_LocalPosition.x
@@ -10662,11 +10662,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 911446400003031103, guid: 101df1b06f88f44be8448d2876edcd74, type: 3}
       propertyPath: m_Name
-      value: FoodItem_3
+      value: FoodItem_4
       objectReference: {fileID: 0}
     - target: {fileID: 2933623041409837994, guid: 101df1b06f88f44be8448d2876edcd74, type: 3}
       propertyPath: m_RootOrder
-      value: 2
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 2933623041409837994, guid: 101df1b06f88f44be8448d2876edcd74, type: 3}
       propertyPath: m_LocalPosition.x
@@ -10674,7 +10674,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2933623041409837994, guid: 101df1b06f88f44be8448d2876edcd74, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.036
+      value: -0.035
       objectReference: {fileID: 0}
     - target: {fileID: 2933623041409837994, guid: 101df1b06f88f44be8448d2876edcd74, type: 3}
       propertyPath: m_LocalPosition.z
@@ -11425,15 +11425,15 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1039995562}
-  m_LocalRotation: {x: -0, y: 0.70710677, z: -0, w: 0.7071068}
-  m_LocalPosition: {x: 6.7574997, y: 3.88, z: -8.199999}
+  m_LocalRotation: {x: -0, y: 0.00000020861626, z: -0, w: 1}
+  m_LocalPosition: {x: 8.815, y: 3.88, z: -7.839}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 55932965}
   m_Father: {fileID: 0}
   m_RootOrder: 3
-  m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1040659820
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -17598,7 +17598,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2130398903583827995, guid: 3f167d12854f242cc9af518cdaae4754, type: 3}
       propertyPath: m_Name
-      value: Kana_2
+      value: Kana_3
       objectReference: {fileID: 0}
     - target: {fileID: 2130398903583827995, guid: 3f167d12854f242cc9af518cdaae4754, type: 3}
       propertyPath: m_TagString
@@ -19761,10 +19761,10 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
+  - {fileID: 843145314}
   - {fileID: 1927592974}
   - {fileID: 1311087188}
   - {fileID: 970907887}
-  - {fileID: 843145314}
   m_Father: {fileID: 0}
   m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -19802,10 +19802,10 @@ MonoBehaviour:
   - {fileID: 2100000, guid: 2e77555c939934762a7282c495064833, type: 2}
   - {fileID: 2100000, guid: 9d89f7bf0d0d046c682c8bab080ccd50, type: 2}
   Foodlabels:
+  - {fileID: 179051333}
   - {fileID: 25047891}
   - {fileID: 1699453804}
   - {fileID: 580905184}
-  - {fileID: 179051333}
   FoodlabelRend:
   - {fileID: 0}
   - {fileID: 0}
@@ -22048,7 +22048,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 911446400003031103, guid: 101df1b06f88f44be8448d2876edcd74, type: 3}
       propertyPath: m_Name
-      value: FoodItem_1
+      value: FoodItem_2
       objectReference: {fileID: 0}
     - target: {fileID: 911446400003031103, guid: 101df1b06f88f44be8448d2876edcd74, type: 3}
       propertyPath: m_TagString
@@ -22056,7 +22056,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2933623041409837994, guid: 101df1b06f88f44be8448d2876edcd74, type: 3}
       propertyPath: m_RootOrder
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2933623041409837994, guid: 101df1b06f88f44be8448d2876edcd74, type: 3}
       propertyPath: m_LocalPosition.x

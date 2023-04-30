@@ -28,6 +28,8 @@ public class GameLoop : MonoBehaviour
     IEnumerator SetAndPlaySound() {
         while (true){
             yield return new WaitForSeconds(5);
+            PPScript.ResetCanv();
+            FCScript.ResetFoods();
             asc.SetCustomerState(0); // idle
             yield return new WaitForSeconds(5);
             int kana = Random.Range(0, 20);

@@ -61,6 +61,17 @@ public class FoodChoices : MonoBehaviour
         
     }
 
+    public void ResetFoods() {
+        Foodlabels[0].transform.parent.localPosition = new Vector3(-0.1f, -0.035f, 0.147f);
+        Foodlabels[0].transform.parent.localRotation = Quaternion.Euler(0, 0, 0);
+        Foodlabels[1].transform.parent.localPosition = new Vector3(0.216f, -0.035f, -0.173f);
+        Foodlabels[1].transform.parent.localRotation = Quaternion.Euler(0, 0, 0);
+        Foodlabels[2].transform.parent.localPosition = new Vector3(0.464f, -0.035f, -0.533f);
+        Foodlabels[2].transform.parent.localRotation = Quaternion.Euler(0, 0, 0);
+        Foodlabels[3].transform.parent.localPosition = new Vector3(0.582f, -0.035f, -0.974f);
+        Foodlabels[3].transform.parent.localRotation = Quaternion.Euler(0, 0, 0);
+    }
+
     // Update is called once per frame
     void Update()
     {

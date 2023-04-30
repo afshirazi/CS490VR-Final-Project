@@ -19,6 +19,10 @@ public class CharacterCheck : MonoBehaviour
     public void SetKanaTag(string NewKanaTag) {
         KanaTag = NewKanaTag;
     }
+
+    public void ResetCanv() {
+        ConfirmationTest.text = "";
+    }
     
     void Start()
     {

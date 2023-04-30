@@ -7,6 +7,8 @@ public class FoodChoices : MonoBehaviour
     public Material[] Chars;
     public GameObject[] Foodlabels;
     public Renderer[] FoodlabelRend;
+    private string[] TagList = {"kana_a", "kana_u", "kana_i", "kana_e", "kana_o", "kana_ta", "kana_tsu", "kana_chi", "kana_te", "kana_to", "kana_sa", "kana_su", 
+    "kana_shi", "kana_se", "kana_so", "kana_ka", "kana_ku", "kana_ki", "kana_ke", "kana_ko" };
     // Start is called before the first frame update
     void Start()
     {
@@ -19,8 +21,9 @@ public class FoodChoices : MonoBehaviour
     public void SetChosenLabel(int Chara) {
         int idx = Random.Range(0, 4);
         FoodlabelRend[idx].material = Chars[Chara];
+        Foodlabels[idx].transform.parent.gameObject.tag = TagList[Chara];
 
-        int otherChar1 = Random.Range(0, 20); 
+        int otherChar1 = Random.Range(0, 20);
         while (otherChar1 == Chara) {
             otherChar1 = Random.Range(0, 20); 
         }
@@ -41,14 +44,17 @@ public class FoodChoices : MonoBehaviour
                 switch (j) {
                     case 0:
                         FoodlabelRend[i].material = Chars[otherChar1];
+                        Foodlabels[i].transform.parent.gameObject.tag = TagList[otherChar1];
                         j++;
                         break;
                     case 1:
                         FoodlabelRend[i].material = Chars[otherChar2];
+                        Foodlabels[i].transform.parent.gameObject.tag = TagList[otherChar2];
                         j++;
                         break;
                     case 2:
                         FoodlabelRend[i].material = Chars[otherChar3];
+                        Foodlabels[i].transform.parent.gameObject.tag = TagList[otherChar3];
                         break;
                 }
         }

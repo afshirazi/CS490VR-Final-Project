@@ -6,6 +6,25 @@ TagManager:
   tags:
   - kana_a
   - kana_i
+  - kana_u
+  - kana_o
+  - kana_e
+  - kana_ta
+  - kana_te
+  - kana_to
+  - kana_chi
+  - kana_tsu
+  - kana_sa
+  - kana_su
+  - kana_se
+  - kana_shi
+  - kana_so
+  - kana_ka
+  - kana_ku
+  - kana_ki
+  - kana_ke
+  - kana_ko
+  - botCam
   layers:
   - Default
   - TransparentFX

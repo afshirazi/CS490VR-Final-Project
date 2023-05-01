@@ -8,7 +8,8 @@ public class FoodChoices : MonoBehaviour
     public GameObject[] Foodlabels;
     public Renderer[] FoodlabelRend;
     private string[] TagList = {"kana_a", "kana_u", "kana_i", "kana_e", "kana_o", "kana_ta", "kana_tsu", "kana_chi", "kana_te", "kana_to", "kana_sa", "kana_su", 
-    "kana_shi", "kana_se", "kana_so", "kana_ka", "kana_ku", "kana_ki", "kana_ke", "kana_ko" };
+    "kana_shi", "kana_se", "kana_so", "kana_ka", "kana_ku", "kana_ki", "kana_ke", "kana_ko", "kana_na", "kana_nu", "kana_ni", "kana_ne", "kana_no", "kana_ma", "kana_mu", "kana_mi", "kana_me", "kana_mo", 
+    "kana_ra", "kana_ru", "kana_ri", "kana_re", "kana_ro", "kana_ha", "kana_fu", "kana_hi", "kana_he", "kana_ho"};
     // Start is called before the first frame update
     void Start()
     {
@@ -23,19 +24,19 @@ public class FoodChoices : MonoBehaviour
         FoodlabelRend[idx].material = Chars[Chara];
         Foodlabels[idx].transform.parent.gameObject.tag = TagList[Chara];
 
-        int otherChar1 = Random.Range(0, 20);
+        int otherChar1 = Random.Range(0, 40);
         while (otherChar1 == Chara) {
-            otherChar1 = Random.Range(0, 20); 
+            otherChar1 = Random.Range(0, 40); 
         }
 
-        int otherChar2 = Random.Range(0, 20); 
+        int otherChar2 = Random.Range(0, 40); 
         while (otherChar2 == otherChar1 || otherChar2 == Chara) {
-            otherChar2 = Random.Range(0, 20); 
+            otherChar2 = Random.Range(0, 40); 
         }
 
-        int otherChar3 = Random.Range(0, 20);  
+        int otherChar3 = Random.Range(0, 40);  
         while (otherChar3 == otherChar1 || otherChar3 == otherChar2 || otherChar3 == Chara) {
-            otherChar3 = Random.Range(0, 20); 
+            otherChar3 = Random.Range(0, 40); 
         }
 
         int j = 0;

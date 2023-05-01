@@ -25,6 +25,26 @@ TagManager:
   - kana_ke
   - kana_ko
   - botCam
+  - kana_ha
+  - kana_fu
+  - kana_hi
+  - kana_he
+  - kana_ho
+  - kana_na
+  - kana_nu
+  - kana_ni
+  - kana_ne
+  - kana_no
+  - kana_ma
+  - kana_mu
+  - kana_mi
+  - kana_me
+  - kana_mo
+  - kana_ra
+  - kana_ru
+  - kana_ri
+  - kana_re
+  - kana_ro
   layers:
   - Default
   - TransparentFX

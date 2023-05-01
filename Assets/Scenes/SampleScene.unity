@@ -259,6 +259,10 @@ PrefabInstance:
       propertyPath: m_TagString
       value: kana_a
       objectReference: {fileID: 0}
+    - target: {fileID: 2130398903583827998, guid: 3f167d12854f242cc9af518cdaae4754, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: a7ecb4c7b151648019e8d3ae835baaa1, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3f167d12854f242cc9af518cdaae4754, type: 3}
 --- !u!1 &25047891 stripped
@@ -343,8 +347,8 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 36375057}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.21, y: 3.79, z: -3.4}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -0.60220057, y: 0.01999998, z: 6.2077003}
   m_LocalScale: {x: 0.19903633, y: 0.19903633, z: 0.19903633}
   m_ConstrainProportionsScale: 1
   m_Children:
@@ -353,8 +357,8 @@ Transform:
   - {fileID: 1917628250}
   - {fileID: 652360565}
   - {fileID: 1257371981}
-  m_Father: {fileID: 0}
-  m_RootOrder: 9
+  m_Father: {fileID: 1532589681}
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &37706576
 PrefabInstance:
@@ -15662,6 +15666,7 @@ Transform:
   - {fileID: 1686211652}
   - {fileID: 151139062}
   - {fileID: 248818274}
+  - {fileID: 36375058}
   m_Father: {fileID: 0}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -18945,6 +18950,7 @@ GameObject:
   - component: {fileID: 40919617}
   - component: {fileID: 40919616}
   - component: {fileID: 40919615}
+  - component: {fileID: 1911972693}
   m_Layer: 0
   m_Name: AudioSource
   m_TagString: Untagged
@@ -18952,6 +18958,19 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!114 &1911972693
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1911972692}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7b08fa9a4b8f3fc41aad77f7ce4ee276, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Timer: 0
 --- !u!1001 &1917628249
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -19801,6 +19820,26 @@ MonoBehaviour:
   - {fileID: 2100000, guid: 5f5fd961da73f46fe907f9eba261afb5, type: 2}
   - {fileID: 2100000, guid: 2e77555c939934762a7282c495064833, type: 2}
   - {fileID: 2100000, guid: 9d89f7bf0d0d046c682c8bab080ccd50, type: 2}
+  - {fileID: 2100000, guid: ce2f8ffe82880421ca0a29be788e126b, type: 2}
+  - {fileID: 2100000, guid: d59c06432f30549c98888eb9d6cd0b1f, type: 2}
+  - {fileID: 2100000, guid: f4faefc2b043c41549c13e19f3609700, type: 2}
+  - {fileID: 2100000, guid: 8e65baba785e14e469e77cb54b463fbe, type: 2}
+  - {fileID: 2100000, guid: 123152dc18cdc4b3dba565090943bcf3, type: 2}
+  - {fileID: 2100000, guid: 1e534fd9dd2114e1ebf9b1beeadf0766, type: 2}
+  - {fileID: 2100000, guid: a7ecb4c7b151648019e8d3ae835baaa1, type: 2}
+  - {fileID: 2100000, guid: 7597cf8c030c24c148ca807683574c0c, type: 2}
+  - {fileID: 2100000, guid: 90188182bfa5e4b7585f9e1188e69008, type: 2}
+  - {fileID: 2100000, guid: 69608fb8d261742c19f4da81a1fddd80, type: 2}
+  - {fileID: 2100000, guid: 16595d1077ef04713909cdf4758bb8d1, type: 2}
+  - {fileID: 2100000, guid: ac03d4b9ee0b7424db976d52374cc80d, type: 2}
+  - {fileID: 2100000, guid: 1074251c8b31a4f459691f6ac42007a3, type: 2}
+  - {fileID: 2100000, guid: adfb9bd19cf894fe1a386bd4afb9df4a, type: 2}
+  - {fileID: 2100000, guid: 6dedd9194fbe5482db469a06878a76ec, type: 2}
+  - {fileID: 2100000, guid: 7d901b63b6b97455784217a306b9078e, type: 2}
+  - {fileID: 2100000, guid: 3d2550599a4eb4073ab3eacdff8c4c47, type: 2}
+  - {fileID: 2100000, guid: cfc12e2701f644e61b5cda8a625712eb, type: 2}
+  - {fileID: 2100000, guid: f4b12a163c35f46068183cb6eccc82a3, type: 2}
+  - {fileID: 2100000, guid: 78c7d901df99c4e6398f230bb20f4027, type: 2}
   Foodlabels:
   - {fileID: 179051333}
   - {fileID: 25047891}

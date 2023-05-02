@@ -59,7 +59,6 @@ public class FoodChoices : MonoBehaviour
                         break;
                 }
         }
-        
     }
 
     public void ResetFoods() {

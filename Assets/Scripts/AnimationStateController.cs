@@ -16,19 +16,19 @@ public class AnimationStateController : MonoBehaviour
     void Update()
     {
         if (customerState == 1) {
-            animator.SetInteger("CustomerReaction", 1); // call out
-            print("call out");
+            animator.SetTrigger("callOut");
+            print("callout");
+            customerState = 0;
         } 
         else if (customerState == 2) {
-            animator.SetInteger("CustomerReaction", 2); // thumbs up
+            animator.SetTrigger("thumbUp");
             print("thumbs up");
+            customerState = 0;
         }
         else if (customerState == 3) {
-            animator.SetInteger("CustomerReaction", 3); // thumbs down
+            animator.SetTrigger("thumbDown");
             print("thumbs down");
-        }
-        else {
-            animator.SetInteger("CustomerReaction", 0);
+            customerState = 0;
         }
     }
 

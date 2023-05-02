@@ -12,19 +12,19 @@ public class CharacterCheck : MonoBehaviour
     public AudioClip CorrectSound;
     public AudioClip IncorrectSound;
 
-    void OnTriggerStay(Collider other) {
+    void OnTriggerEnter(Collider other) {
         if (other.gameObject.tag == KanaTag) {
             ConfirmationTest.text = "Correct";
-            ConfirmationTest.color = new Color(1.0f, 0.0f, 0.0f, 1.0f);
-            asc.SetCustomerState(2); // thumbs up
+            ConfirmationTest.color = new Color(0.0f, 1.0f, 0.0f, 1.0f);
             CurrSound.clip = CorrectSound;
             CurrSound.Play();
+            asc.SetCustomerState(2); // thumbs up
         } else {
             ConfirmationTest.text = "Wrong";
-            ConfirmationTest.color = new Color(0.0f, 0.0f, 1.0f, 1.0f);
-            asc.SetCustomerState(3); // thumbs down
+            ConfirmationTest.color = new Color(1.0f, 0.0f, 0.0f, 1.0f);
             CurrSound.clip = IncorrectSound;
             CurrSound.Play();
+            asc.SetCustomerState(3); // thumbs down
         }
     }
 
@@ -39,9 +39,7 @@ public class CharacterCheck : MonoBehaviour
     
     void Start()
     {
-        Canvas = GameObject.Find("Canvas");
         ConfirmationTest = Canvas.GetComponent<TextMesh>();
-        CurrSound = GetComponent<AudioSource>();
     }
 
     void Update()

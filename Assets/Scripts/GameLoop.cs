@@ -29,22 +29,17 @@ public class GameLoop : MonoBehaviour
 
     IEnumerator SetAndPlaySound() {
         while (true) {
-            yield return new WaitForSeconds(10);
             PPScript.ResetCanv();
             FCScript.ResetFoods();
-            asc.SetCustomerState(0); // idle
-            
             int kana = Random.Range(0, 40);
             FCScript.SetChosenLabel(kana);
             PPScript.SetKanaTag(TagList[kana]);
             CurrSound.clip = KanaSounds[kana];
             yield return new WaitForSeconds(1.5f);
-            CurrSound.Play();
             asc.SetCustomerState(1); // call out sound
-            yield return new WaitForSeconds(1f);
-            asc.SetCustomerState(0); // idle
+            CurrSound.Play();
+            yield return new WaitForSeconds(12f);
         }
-        
     }
 
     // Update is called once per frame

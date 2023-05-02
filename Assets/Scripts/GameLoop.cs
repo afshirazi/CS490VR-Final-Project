@@ -16,15 +16,12 @@ public class GameLoop : MonoBehaviour
     "kana_shi", "kana_se", "kana_so", "kana_ka", "kana_ku", "kana_ki", "kana_ke", "kana_ko", "kana_na", "kana_nu", "kana_ni", "kana_ne", "kana_no", "kana_ma", "kana_mu", "kana_mi", "kana_me", "kana_mo", 
     "kana_ra", "kana_ru", "kana_ri", "kana_re", "kana_ro", "kana_ha", "kana_fu", "kana_hi", "kana_he", "kana_ho"};
 
-    private CustomTimer Timer;
     // Start is called before the first frame update
     void Start()
     {
         CurrSound = GetComponent<AudioSource>();
         PPScript = MyPressurePlate.GetComponent<CharacterCheck>();
         FCScript = MyFoodChoices.GetComponent<FoodChoices>();
-        Timer = GetComponent<CustomTimer>();
-        
 
         Coroutine = SetAndPlaySound();
         StartCoroutine(Coroutine);
@@ -32,18 +29,20 @@ public class GameLoop : MonoBehaviour
 
     IEnumerator SetAndPlaySound() {
         while (true) {
-            yield return new WaitForSeconds(3);
+            yield return new WaitForSeconds(10);
             PPScript.ResetCanv();
             FCScript.ResetFoods();
             asc.SetCustomerState(0); // idle
             
-            yield return new WaitForSeconds(3);
             int kana = Random.Range(0, 40);
             FCScript.SetChosenLabel(kana);
             PPScript.SetKanaTag(TagList[kana]);
             CurrSound.clip = KanaSounds[kana];
+            yield return new WaitForSeconds(1.5f);
             CurrSound.Play();
             asc.SetCustomerState(1); // call out sound
+            yield return new WaitForSeconds(1f);
+            asc.SetCustomerState(0); // idle
         }
         
     }
@@ -51,6 +50,6 @@ public class GameLoop : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+
     }
 }

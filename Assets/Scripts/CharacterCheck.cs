@@ -7,15 +7,15 @@ public class CharacterCheck : MonoBehaviour
     public TextMesh ConfirmationTest;
     public GameObject Canvas;
     public string KanaTag;
-    public bool Correct;
+    public AnimationStateController asc;
 
     void OnTriggerStay(Collider other) {
         if (other.gameObject.tag == KanaTag) {
             ConfirmationTest.text = "correct";
-            Correct = true;
+            asc.SetCustomerState(2); // thumbs up
         } else {
             ConfirmationTest.text = "wrong";
-            Correct = false;
+            asc.SetCustomerState(3); // thumbs down
         }
     }
 
@@ -25,12 +25,10 @@ public class CharacterCheck : MonoBehaviour
 
     public void ResetCanv() {
         ConfirmationTest.text = "";
-        Correct = false;
     }
     
     void Start()
     {
-        Correct = false;
         Canvas = GameObject.Find("Canvas");
         ConfirmationTest = Canvas.GetComponent<TextMesh>();
     }
